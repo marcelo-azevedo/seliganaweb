@@ -1,0 +1,269 @@
+#contato{
+	.coluna-esquerda{
+		width: 615px;
+		margin-left: 20px;
+		position: relative;
+		display: inline-block;
+		@include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+
+		.sub-titulo{
+			width: 430px;
+			position: absolute;
+			top: 125px;
+			right: 20px;
+			font: em(18) $regular;
+			color: $azul-escuro;
+			@include animation-delay(0.2s);
+
+			span{
+				color: $laranja;
+			}
+		}
+
+		form{
+			width: 430px;
+			position: absolute;
+			top: 240px;
+			right: 20px;
+			@include animation-delay(0.4s);
+
+			label{
+				@include animation(fadeIn 0.3s ease-out both, slideLeft 0.3s ease-out);
+				position: relative;
+				@for $i from 1 through 6 {
+				  &:nth-child(#{$i}) { 
+				  	$valor: $i/10 + s;
+				  	@include animation-delay($valor); 
+				  }
+				}
+			}
+
+			input[type="text"], textarea{
+				@include box-sizing(border-box);
+				@include size(100% 46);
+				@include border-top-radius(30px);
+				@include border-bottom-radius(30px);
+				@include border-left-radius(30px);
+				@include border-right-radius(30px);
+				background-color: $azul-escuro;
+				border: none;
+				margin-bottom: 15px;
+				padding: 0 30px;
+				color: $azul-link-menu;
+				-webkit-transition: background-color 0.3s ease-in-out;
+			    -moz-transition: background-color 0.3s ease-in-out;
+			    transition: background-color 0.3s ease-in-out;
+			    position: relative;
+			    
+				@include placeholder {
+					font: em(14) $regular;
+					color: $azul-link-menu;
+					-webkit-transition: color 0.3s ease-in-out;
+				    -moz-transition: color 0.3s ease-in-out;
+				    transition: color 0.3s ease-in-out;
+
+				}
+
+				&:active, &:focus{
+					background-color: $laranja;
+					color: white;
+
+					@include placeholder {
+						color: white;
+					}
+				}
+			}
+
+			textarea{
+				height: auto;
+				min-height: 145px;
+				padding-top: 20px;
+			}
+
+			input[type="submit"]{
+				@include box-sizing(border-box);
+				@include size(140 45);
+				@include border-top-radius(30px);
+				@include border-bottom-radius(30px);
+				@include border-left-radius(30px);
+				@include border-right-radius(30px);
+				background-color: $laranja;
+				font: em(14) $regular;
+				color: #ffbc85;
+				border: none;
+				-webkit-transition: color 0.3s ease-in-out;
+			    -moz-transition: color 0.3s ease-in-out;
+			    transition: color 0.3s ease-in-out;
+
+			    &:hover{
+			    	color: white;
+			    }
+			}
+
+		}
+	}
+
+	#aside-direita{
+		@include box-sizing(border-box);
+		width: 260px;
+		position: absolute;
+		top: em(96);
+		right: 0;
+		@include animation(fadeIn 0.5s ease-out both);
+		@include animation-delay(1s);
+
+
+		.selo-contato{
+			@include size(200px);
+			@include hide-text;
+			display: block;
+			background: url(../images/sprite/selo-seliga.png) no-repeat center;
+			margin-bottom: 40px;
+		}
+
+		> p {
+			font: em(22) $bold;
+			color: $azul-escuro;
+			display: block;
+			width: 100%;
+
+			span{
+				color: $laranja;
+			}
+		}
+
+		> small {
+			font: em(14) $regular;
+			line-height: 16px;
+			color: $azul-link-menu;
+			display: block;
+			margin: 10px 0;
+		}
+
+		> a {
+			display: block;
+			position: relative;
+			@include box-sizing(border-box);
+			@include size(190 46);
+			@include border-top-radius(30px);
+			@include border-bottom-radius(30px);
+			@include border-left-radius(30px);
+			@include border-right-radius(30px);
+			background: $azul-escuro;
+			border: none;
+			font: em(14) $regular;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			padding-top: 15px;
+			margin: 20px 0;
+			-webkit-transition: background-color 0.3s ease-in-out;
+		    -moz-transition: background-color 0.3s ease-in-out;
+		    transition: background-color 0.3s ease-in-out;
+
+		    &:before{
+		    	content: "";
+		    	@include size(36);
+		    	@include border-top-radius(30px);
+				@include border-bottom-radius(30px);
+				@include border-left-radius(30px);
+				@include border-right-radius(30px);
+		    	display: block;
+		    	position: absolute;
+		    	top: 5px;
+		    	left: 5px;
+		    	background: $laranja url(../images/sprite/icon-selecione.png) no-repeat 10px 9px;
+		    	-webkit-transition: background-color 0.3s ease-in-out;
+			    -moz-transition: background-color 0.3s ease-in-out;
+			    transition: background-color 0.3s ease-in-out;
+
+		    }
+
+		    &:hover{
+		    	background-color: $laranja;
+
+		    	&:before{
+		    		background-color: white;
+		    	}
+		    }
+		}
+
+		.redes-sociais{
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			
+			> small {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font: em(14) $bold;
+				color: $azul-escuro;
+
+				span{
+					color: $laranja;
+				}
+
+
+			}
+
+			> a {
+				@include hide-text;
+				@include box-sizing(border-box);
+				@include size(54);
+				@include border-top-radius(30px);
+				@include border-bottom-radius(30px);
+				@include border-left-radius(30px);
+				@include border-right-radius(30px);
+				display: inline-block;
+				background-color: $musgo;
+				background-repeat: no-repeat;
+				margin-left: 8px;
+				-webkit-transition: background-color 0.3s ease-in-out;
+			    -moz-transition: background-color 0.3s ease-in-out;
+			    transition: background-color 0.3s ease-in-out;
+
+			    &.facebook{
+			    	background-image: url(../images/sprite/icone-face.png);
+			    	background-position: 21px 16px;
+			    }
+
+				&.likedin{
+					background-image: url(../images/sprite/icone-liked.png);
+					background-position: 17px 17px;
+				}
+
+				&.twitter{
+					background-image: url(../images/sprite/icone-twitter.png);
+					background-position: 16px 18px;
+				}
+
+				&.youtube{
+					background-image: url(../images/sprite/icone-you.png);
+					background-position: 16px 14px;
+				}
+
+
+			    &:hover{
+			    	background-color: $laranja;
+			    }
+
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

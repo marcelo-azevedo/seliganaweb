@@ -1,0 +1,2929 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/vendor/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/vendor/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/vendor/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, ../sass/vendor/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, ../sass/vendor/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, ../sass/vendor/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, ../sass/vendor/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../sass/vendor/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../sass/vendor/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../sass/vendor/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, ../sass/vendor/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, ../sass/vendor/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, ../sass/vendor/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, ../sass/vendor/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, ../sass/vendor/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, ../sass/vendor/normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, ../sass/vendor/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, ../sass/vendor/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, ../sass/vendor/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, ../sass/vendor/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, ../sass/vendor/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../sass/vendor/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../sass/vendor/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../sass/vendor/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../sass/vendor/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../sass/vendor/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, ../sass/vendor/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, ../sass/vendor/normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, ../sass/vendor/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, ../sass/vendor/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, ../sass/vendor/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, ../sass/vendor/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, ../sass/vendor/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, ../sass/vendor/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, ../sass/vendor/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, ../sass/vendor/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, ../sass/vendor/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/helpers/_clearfix.scss */
+.container, #header, #header .bg-header, #aliga > section, #aliga .freelances, .bg-oquesomos {
+  *zoom: 1;
+}
+/* line 18, ../sass/vendor/bourbon/addons/_clearfix.scss */
+.container:before, #header:before, #header .bg-header:before, #aliga > section:before, #aliga .freelances:before, .bg-oquesomos:before, .container:after, #header:after, #header .bg-header:after, #aliga > section:after, #aliga .freelances:after, .bg-oquesomos:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../sass/vendor/bourbon/addons/_clearfix.scss */
+.container:after, #header:after, #header .bg-header:after, #aliga > section:after, #aliga .freelances:after, .bg-oquesomos:after {
+  clear: both;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 6, ../sass/core/anime.scss */
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  /* line 7, ../sass/core/anime.scss */
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 10, ../sass/core/anime.scss */
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  /* line 11, ../sass/core/anime.scss */
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@-o-keyframes fadeIn {
+  /* line 14, ../sass/core/anime.scss */
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  /* line 15, ../sass/core/anime.scss */
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@keyframes fadeIn {
+  /* line 18, ../sass/core/anime.scss */
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  /* line 19, ../sass/core/anime.scss */
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 25, ../sass/core/anime.scss */
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  /* line 26, ../sass/core/anime.scss */
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 29, ../sass/core/anime.scss */
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  /* line 30, ../sass/core/anime.scss */
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 33, ../sass/core/anime.scss */
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  /* line 34, ../sass/core/anime.scss */
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes fadeOut {
+  /* line 37, ../sass/core/anime.scss */
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  /* line 38, ../sass/core/anime.scss */
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  /* line 44, ../sass/core/anime.scss */
+  0% {
+    left: 40px;
+  }
+
+  /* line 45, ../sass/core/anime.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes slideLeft {
+  /* line 48, ../sass/core/anime.scss */
+  0% {
+    left: 40px;
+  }
+
+  /* line 49, ../sass/core/anime.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-o-keyframes slideLeft {
+  /* line 52, ../sass/core/anime.scss */
+  0% {
+    left: 40px;
+  }
+
+  /* line 53, ../sass/core/anime.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  /* line 56, ../sass/core/anime.scss */
+  0% {
+    left: 40px;
+  }
+
+  /* line 57, ../sass/core/anime.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  /* line 63, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 64, ../sass/core/anime.scss */
+  100% {
+    left: -40px;
+  }
+}
+
+@-moz-keyframes slideRight {
+  /* line 67, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 68, ../sass/core/anime.scss */
+  100% {
+    left: -40px;
+  }
+}
+
+@-o-keyframes slideRight {
+  /* line 71, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 72, ../sass/core/anime.scss */
+  100% {
+    left: -40px;
+  }
+}
+
+@keyframes slideRight {
+  /* line 75, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 76, ../sass/core/anime.scss */
+  100% {
+    left: -40px;
+  }
+}
+
+@-webkit-keyframes slideRightc {
+  /* line 82, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 83, ../sass/core/anime.scss */
+  100% {
+    left: 40px;
+  }
+}
+
+@-moz-keyframes slideRightc {
+  /* line 86, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 87, ../sass/core/anime.scss */
+  100% {
+    left: 40px;
+  }
+}
+
+@-o-keyframes slideRightc {
+  /* line 90, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 91, ../sass/core/anime.scss */
+  100% {
+    left: 40px;
+  }
+}
+
+@keyframes slideRightc {
+  /* line 94, ../sass/core/anime.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 95, ../sass/core/anime.scss */
+  100% {
+    left: 40px;
+  }
+}
+
+@-webkit-keyframes bgSlide {
+  /* line 101, ../sass/core/anime.scss */
+  0% {
+    right: -100%;
+  }
+
+  /* line 102, ../sass/core/anime.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-moz-keyframes bgSlide {
+  /* line 105, ../sass/core/anime.scss */
+  0% {
+    right: -100%;
+  }
+
+  /* line 106, ../sass/core/anime.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-o-keyframes bgSlide {
+  /* line 109, ../sass/core/anime.scss */
+  0% {
+    right: -100%;
+  }
+
+  /* line 110, ../sass/core/anime.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes bgSlide {
+  /* line 113, ../sass/core/anime.scss */
+  0% {
+    right: -100%;
+  }
+
+  /* line 114, ../sass/core/anime.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes bgSlideSaida {
+  /* line 120, ../sass/core/anime.scss */
+  0% {
+    right: 0;
+  }
+
+  /* line 121, ../sass/core/anime.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-moz-keyframes bgSlideSaida {
+  /* line 124, ../sass/core/anime.scss */
+  0% {
+    right: 0;
+  }
+
+  /* line 125, ../sass/core/anime.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-o-keyframes bgSlideSaida {
+  /* line 128, ../sass/core/anime.scss */
+  0% {
+    right: 0;
+  }
+
+  /* line 129, ../sass/core/anime.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes bgSlideSaida {
+  /* line 132, ../sass/core/anime.scss */
+  0% {
+    right: 0;
+  }
+
+  /* line 133, ../sass/core/anime.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes tanUlX {
+  /* line 139, ../sass/core/anime.scss */
+  0% {
+    width: 0;
+  }
+
+  /* line 140, ../sass/core/anime.scss */
+  100% {
+    width: 307px;
+  }
+}
+
+@-moz-keyframes tanUlX {
+  /* line 143, ../sass/core/anime.scss */
+  0% {
+    width: 0;
+  }
+
+  /* line 144, ../sass/core/anime.scss */
+  100% {
+    width: 307px;
+  }
+}
+
+@-o-keyframes tanUlX {
+  /* line 147, ../sass/core/anime.scss */
+  0% {
+    width: 0;
+  }
+
+  /* line 148, ../sass/core/anime.scss */
+  100% {
+    width: 307px;
+  }
+}
+
+@keyframes tanUlX {
+  /* line 151, ../sass/core/anime.scss */
+  0% {
+    width: 0;
+  }
+
+  /* line 152, ../sass/core/anime.scss */
+  100% {
+    width: 307px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  /* line 158, ../sass/core/anime.scss */
+  0% {
+    -webkit-transform: none;
+  }
+
+  /* line 159, ../sass/core/anime.scss */
+  100% {
+    -webkit-transform: rotate(-540deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  /* line 162, ../sass/core/anime.scss */
+  0% {
+    -moz-transform: none;
+  }
+
+  /* line 163, ../sass/core/anime.scss */
+  100% {
+    -moz-transform: rotate(-540deg);
+  }
+}
+
+@-o-keyframes rotate {
+  /* line 166, ../sass/core/anime.scss */
+  0% {
+    -o-transform: none;
+  }
+
+  /* line 167, ../sass/core/anime.scss */
+  100% {
+    -o-transform: rotate(-540deg);
+  }
+}
+
+@keyframes rotate {
+  /* line 170, ../sass/core/anime.scss */
+  0% {
+    transform: none;
+  }
+
+  /* line 171, ../sass/core/anime.scss */
+  100% {
+    transform: rotate(-540deg);
+  }
+}
+
+@-webkit-keyframes rotateP {
+  /* line 177, ../sass/core/anime.scss */
+  0% {
+    -webkit-transform: rotate(-270deg);
+  }
+
+  /* line 178, ../sass/core/anime.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes rotateP {
+  /* line 181, ../sass/core/anime.scss */
+  0% {
+    -moz-transform: rotate(-270deg);
+  }
+
+  /* line 182, ../sass/core/anime.scss */
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-o-keyframes rotateP {
+  /* line 185, ../sass/core/anime.scss */
+  0% {
+    -o-transform: rotate(-270deg);
+  }
+
+  /* line 186, ../sass/core/anime.scss */
+  100% {
+    -o-transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateP {
+  /* line 189, ../sass/core/anime.scss */
+  0% {
+    transform: rotate(-270deg);
+  }
+
+  /* line 190, ../sass/core/anime.scss */
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotatePp {
+  /* line 197, ../sass/core/anime.scss */
+  0% {
+    -webkit-transform: rotate(-355deg);
+  }
+
+  /* line 198, ../sass/core/anime.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes rotatePp {
+  /* line 201, ../sass/core/anime.scss */
+  0% {
+    -moz-transform: rotate(-355deg);
+  }
+
+  /* line 202, ../sass/core/anime.scss */
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-o-keyframes rotatePp {
+  /* line 205, ../sass/core/anime.scss */
+  0% {
+    -o-transform: rotate(-355deg);
+  }
+
+  /* line 206, ../sass/core/anime.scss */
+  100% {
+    -o-transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotatePp {
+  /* line 209, ../sass/core/anime.scss */
+  0% {
+    transform: rotate(-355deg);
+  }
+
+  /* line 210, ../sass/core/anime.scss */
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotatePps {
+  /* line 216, ../sass/core/anime.scss */
+  0% {
+    -webkit-transform: rotate(-360deg);
+  }
+
+  /* line 217, ../sass/core/anime.scss */
+  100% {
+    -webkit-transform: rotate(-355deg);
+  }
+}
+
+@-moz-keyframes rotatePps {
+  /* line 220, ../sass/core/anime.scss */
+  0% {
+    -moz-transform: rotate(-360deg);
+  }
+
+  /* line 221, ../sass/core/anime.scss */
+  100% {
+    -moz-transform: rotate(-355deg);
+  }
+}
+
+@-o-keyframes rotatePps {
+  /* line 224, ../sass/core/anime.scss */
+  0% {
+    -o-transform: rotate(-360deg);
+  }
+
+  /* line 225, ../sass/core/anime.scss */
+  100% {
+    -o-transform: rotate(-355deg);
+  }
+}
+
+@keyframes rotatePps {
+  /* line 228, ../sass/core/anime.scss */
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  /* line 229, ../sass/core/anime.scss */
+  100% {
+    transform: rotate(-355deg);
+  }
+}
+
+@-webkit-keyframes heightSingle {
+  /* line 235, ../sass/core/anime.scss */
+  0% {
+    top: 100%;
+  }
+
+  /* line 236, ../sass/core/anime.scss */
+  100% {
+    top: 94px;
+  }
+}
+
+@-moz-keyframes heightSingle {
+  /* line 239, ../sass/core/anime.scss */
+  0% {
+    top: 100%;
+  }
+
+  /* line 240, ../sass/core/anime.scss */
+  100% {
+    top: 94px;
+  }
+}
+
+@-o-keyframes heightSingle {
+  /* line 243, ../sass/core/anime.scss */
+  0% {
+    top: 100%;
+  }
+
+  /* line 244, ../sass/core/anime.scss */
+  100% {
+    top: 94px;
+  }
+}
+
+@keyframes heightSingle {
+  /* line 247, ../sass/core/anime.scss */
+  0% {
+    top: 100%;
+  }
+
+  /* line 248, ../sass/core/anime.scss */
+  100% {
+    top: 94px;
+  }
+}
+
+/* line 12, ../sass/core/reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li, a,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 14, ../sass/core/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 16, ../sass/core/reset.scss */
+input[type=text]:focus, input[type=password]:focus, input[type=button]:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* line 1, ../sass/core/base.scss */
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #333;
+}
+
+/* line 7, ../sass/core/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+@font-face {
+  font-family: ProximaNova-Bold;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/ProximaNova-Bold/ProximaNova-Bold-webfont.eot");
+  src: url("fonts/ProximaNova-Bold/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Bold/ProximaNova-Bold-webfont.woff") format("woff"), url("fonts/ProximaNova-Bold/ProximaNova-Bold-webfont.ttf") format("truetype"), url("fonts/ProximaNova-Bold/ProximaNova-Bold-webfont.svg#ProximaNova-Bold") format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova-Semibold;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/ProximaNova-Semibold/proximanova-semibold-webfont.eot");
+  src: url("fonts/ProximaNova-Semibold/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Semibold/proximanova-semibold-webfont.woff") format("woff"), url("fonts/ProximaNova-Semibold/proximanova-semibold-webfont.ttf") format("truetype"), url("fonts/ProximaNova-Semibold/proximanova-semibold-webfont.svg#ProximaNova-Semibold") format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova-Extrabold;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/ProximaNova-Extrabold/proximanova-extrabold-webfont.eot");
+  src: url("fonts/ProximaNova-Extrabold/proximanova-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Extrabold/proximanova-extrabold-webfont.woff") format("woff"), url("fonts/ProximaNova-Extrabold/proximanova-extrabold-webfont.ttf") format("truetype"), url("fonts/ProximaNova-Extrabold/proximanova-extrabold-webfont.svg#ProximaNova-Extrabold") format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova-Regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/ProximaNova-Regular/proximanova-regular-webfont.eot");
+  src: url("fonts/ProximaNova-Regular/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Regular/proximanova-regular-webfont.woff") format("woff"), url("fonts/ProximaNova-Regular/proximanova-regular-webfont.ttf") format("truetype"), url("fonts/ProximaNova-Regular/proximanova-regular-webfont.svg#ProximaNova-Regular") format("svg");
+}
+
+/* line 1, ../sass/core/layout.scss */
+body {
+  background: white url(../images/bg.png) top center;
+}
+
+/* line 5, ../sass/core/layout.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 1, ../sass/modules/header.scss */
+#header {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 9;
+  position: relative;
+}
+/* line 8, ../sass/modules/header.scss */
+#header .bg-header {
+  background: url(../images/bg.png) top center, url("../images/bg-azul.jpg") top center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-animation: bgSlide 0.3s linear both;
+  -moz-animation: bgSlide 0.3s linear both;
+  animation: bgSlide 0.3s linear both;
+}
+/* line 18, ../sass/modules/header.scss */
+#header.saida .bg-header {
+  -webkit-animation: bgSlideSaida 0.4s linear both;
+  -moz-animation: bgSlideSaida 0.4s linear both;
+  animation: bgSlideSaida 0.4s linear both;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 23, ../sass/modules/header.scss */
+#header h1 {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  width: 252px;
+  height: 153px;
+  background-image: url(../images/sprite/logo.png);
+  margin: 0 auto;
+  position: relative;
+  left: 40px;
+  top: 30px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 38, ../sass/modules/header.scss */
+#header.saida h1 {
+  -webkit-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  -moz-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 43, ../sass/modules/header.scss */
+#header h2 {
+  font: 30px ProximaNova-Bold, arial, helvetica;
+  color: white;
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+  position: relative;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 54, ../sass/modules/header.scss */
+#header h2 span {
+  color: #ff7200;
+}
+/* line 59, ../sass/modules/header.scss */
+#header.saida h2 {
+  -webkit-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  -moz-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* line 65, ../sass/modules/header.scss */
+#menu-home {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 69, ../sass/modules/header.scss */
+#menu-home a {
+  width: 220px;
+  height: auto;
+  display: block;
+  padding-top: 250px;
+  background-image: url("../images/sprite/oquesomos.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  margin: 0 10px;
+  position: relative;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  left: 40px;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  font: 25px ProximaNova-Bold, arial, helvetica;
+  color: white;
+  text-decoration: none;
+}
+/* line 89, ../sass/modules/header.scss */
+#menu-home a span {
+  color: #ff7200;
+}
+/* line 93, ../sass/modules/header.scss */
+#menu-home a:hover, #menu-home a:active {
+  background-image: url("../images/sprite/oquesomos-hover.png");
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 98, ../sass/modules/header.scss */
+#menu-home a.link-aliga {
+  background-image: url("../images/sprite/aliga.png");
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 102, ../sass/modules/header.scss */
+#menu-home a.link-aliga:hover, #menu-home a.link-aliga:active {
+  background-image: url("../images/sprite/aliga-hover.png");
+}
+/* line 107, ../sass/modules/header.scss */
+#menu-home a.link-portfolio {
+  background-image: url("../images/sprite/portfolio.png");
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 111, ../sass/modules/header.scss */
+#menu-home a.link-portfolio:hover, #menu-home a.link-portfolio:active {
+  background-image: url("../images/sprite/portfolio-hover.png");
+}
+/* line 116, ../sass/modules/header.scss */
+#menu-home a.link-contato {
+  background-image: url("../images/sprite/contato.png");
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 120, ../sass/modules/header.scss */
+#menu-home a.link-contato:hover, #menu-home a.link-contato:active {
+  background-image: url("../images/sprite/contato-hover.png");
+}
+
+/* line 128, ../sass/modules/header.scss */
+.saida #menu-home a {
+  -webkit-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  -moz-animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+  animation: fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both;
+}
+
+/* line 1, ../sass/modules/pg-internas.scss */
+#pg-internas {
+  width: 940px;
+  margin: 0 auto;
+  z-index: 99;
+  padding-top: 6em;
+  position: relative;
+}
+
+/* line 9, ../sass/modules/pg-internas.scss */
+.header-sections {
+  height: 140px;
+  display: block;
+  position: relative;
+}
+/* line 14, ../sass/modules/pg-internas.scss */
+.header-sections h1 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 160px;
+  font: 3.75em ProximaNova-Extrabold, arial, helvetica;
+  color: #ff7200;
+  float: left;
+  position: relative;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 26, ../sass/modules/pg-internas.scss */
+.header-sections h1 span {
+  color: #202434;
+}
+/* line 30, ../sass/modules/pg-internas.scss */
+.header-sections h1:before {
+  content: "";
+  width: 145px;
+  height: 145px;
+  display: block;
+  background: url(../images/sprite/tit-aliga.png) no-repeat top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: rotateP 0.5s linear both;
+  -moz-animation: rotateP 0.5s linear both;
+  animation: rotateP 0.5s linear both;
+}
+/* line 42, ../sass/modules/pg-internas.scss */
+.header-sections p.sub-titulo {
+  width: 580px;
+  font: 1.125em ProximaNova-Bold, arial, helvetica;
+  color: #202434;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 52, ../sass/modules/pg-internas.scss */
+.header-sections p.sub-titulo a {
+  font-family: ProximaNova-Regular, arial, helvetica;
+  color: #ff7200;
+  text-decoration: none;
+}
+
+/* line 63, ../sass/modules/pg-internas.scss */
+#oquesomos .header-sections h1:before {
+  background-image: url(../images/sprite/tit-oquesomos.png);
+}
+
+/* line 73, ../sass/modules/pg-internas.scss */
+#portfolio .header-sections h1:before {
+  background-image: url(../images/sprite/tit-port.png);
+}
+
+/* line 83, ../sass/modules/pg-internas.scss */
+#contato .header-sections h1:before {
+  background-image: url(../images/sprite/tit-contato.png);
+}
+
+/* line 1, ../sass/modules/menu.scss */
+#menu-internas {
+  position: absolute;
+  top: 1.5625em;
+  right: 0;
+}
+/* line 6, ../sass/modules/menu.scss */
+#menu-internas > a {
+  float: left;
+  width: 46px;
+  height: 46px;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: block;
+  margin-right: 5px;
+  background: #ff7200 url(../images/sprite/link-home-menu.png) no-repeat center;
+  transform: none;
+  -webkit-animation: rotate 0.5s linear both;
+  -moz-animation: rotate 0.5s linear both;
+  animation: rotate 0.5s linear both;
+}
+/* line 21, ../sass/modules/menu.scss */
+#menu-internas > ul {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: auto;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 307px;
+  float: left;
+  background-color: #202434;
+  padding: 0 23px;
+  overflow: hidden;
+  -webkit-animation: tanUlX 0.5s linear both;
+  -moz-animation: tanUlX 0.5s linear both;
+  animation: tanUlX 0.5s linear both;
+}
+/* line 35, ../sass/modules/menu.scss */
+#menu-internas > ul li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding-top: 13px;
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 44, ../sass/modules/menu.scss */
+#menu-internas > ul li:last-child a {
+  border: none;
+}
+/* line 48, ../sass/modules/menu.scss */
+#menu-internas > ul li:hover {
+  border-top: 3px solid #ff7200;
+  padding-top: 10px;
+}
+/* line 55, ../sass/modules/menu.scss */
+#menu-internas > ul a {
+  height: 16px;
+  display: block;
+  font: 0.875em ProximaNova-Semibold, arial, helvetica;
+  text-decoration: none;
+  color: #7a8094;
+  padding: 0 7px;
+  border-right: 1px solid #7a8094;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 67, ../sass/modules/menu.scss */
+#menu-internas > ul a:hover {
+  color: #ff7200;
+}
+
+/* line 2, ../sass/modules/aliga.scss */
+#aliga > section {
+  display: block;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(1) {
+  -webkit-animation-delay: 0.33333s;
+  -moz-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) {
+  -webkit-animation-delay: 0.66667s;
+  -moz-animation-delay: 0.66667s;
+  animation-delay: 0.66667s;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) {
+  -webkit-animation-delay: 1.33333s;
+  -moz-animation-delay: 1.33333s;
+  animation-delay: 1.33333s;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(5) {
+  -webkit-animation-delay: 1.66667s;
+  -moz-animation-delay: 1.66667s;
+  animation-delay: 1.66667s;
+}
+/* line 12, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(6) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(1) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(1) {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(1) {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(2) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(2) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(3) {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(3) {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(4) {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(4) {
+  -webkit-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(5) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(6) {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(6) {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(6) {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(7) {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(7) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(7) {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+/* line 19, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(2) .freelances dl:nth-child(8) {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+/* line 24, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(3) .freelances dl:nth-child(8) {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+/* line 29, ../sass/modules/aliga.scss */
+#aliga > section:nth-child(4) .freelances dl:nth-child(8) {
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+/* line 38, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+/* line 44, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga:before {
+  content: "";
+  width: 414px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ff7200;
+}
+/* line 54, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga:after {
+  content: "";
+  width: 414px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #ff7200;
+}
+/* line 64, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2 {
+  padding-top: 80px;
+  position: relative;
+  font: 2.3125em ProximaNova-Extrabold, arial, helvetica;
+  color: #ff7200;
+}
+/* line 70, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2:before {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 66px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #202434 url(../images/sprite/tit-free-des.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -33px;
+}
+/* line 87, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2.gerente:before {
+  background-image: url(../images/sprite/tit-free-dev.png);
+}
+/* line 92, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2.redator:before {
+  background-image: url(../images/sprite/tit-free-red.png);
+}
+/* line 97, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2.dev-front:before {
+  background-image: url(../images/sprite/tit-free-dev.png);
+}
+/* line 102, ../sass/modules/aliga.scss */
+#aliga .header-section-aliga h2.dev-back:before {
+  background-image: url(../images/sprite/tit-free-dev-b.png);
+}
+/* line 109, ../sass/modules/aliga.scss */
+#aliga .freelances {
+  display: block;
+  width: 720px;
+  margin: 60px auto;
+  text-align: center;
+}
+/* line 116, ../sass/modules/aliga.scss */
+#aliga .freelances dl {
+  display: inline-block;
+  width: 140px;
+  height: auto;
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+/* line 127, ../sass/modules/aliga.scss */
+#aliga .freelances dl dt {
+  width: 140px;
+  height: 148px;
+  position: relative;
+  top: 0;
+}
+/* line 132, ../sass/modules/aliga.scss */
+#aliga .freelances dl dt:before {
+  content: "Veja o Perfil Completo";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+  font: 0.875em ProximaNova-Semibold, arial, helvetica;
+  color: white;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  background-color: #ff7200;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/* line 155, ../sass/modules/aliga.scss */
+#aliga .freelances dl dd {
+  position: relative;
+  bottom: 0;
+}
+/* line 160, ../sass/modules/aliga.scss */
+#aliga .freelances dl h4 {
+  font: 1.0625em ProximaNova-Semibold, arial, helvetica;
+  color: #ff7200;
+}
+/* line 165, ../sass/modules/aliga.scss */
+#aliga .freelances dl h5 {
+  font: 0.8125em ProximaNova-Semibold, arial, helvetica;
+  color: #8c8282;
+}
+/* line 170, ../sass/modules/aliga.scss */
+#aliga .freelances dl span {
+  display: none;
+}
+/* line 178, ../sass/modules/aliga.scss */
+#aliga .freelances dl:hover dt:before {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+}
+
+/* line 192, ../sass/modules/aliga.scss */
+.mask-aliga {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: #202434 url(../images/bg.png) top center;
+  z-index: 999;
+}
+/* line 199, ../sass/modules/aliga.scss */
+.mask-aliga.ativado {
+  display: block;
+  -webkit-animation: heightSingle 0.5s ease-out both, fadeIn 0.5s ease-out both;
+  -moz-animation: heightSingle 0.5s ease-out both, fadeIn 0.5s ease-out both;
+  animation: heightSingle 0.5s ease-out both, fadeIn 0.5s ease-out both;
+}
+
+/* line 205, ../sass/modules/aliga.scss */
+.aliga-single {
+  width: 940px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 9999;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 217, ../sass/modules/aliga.scss */
+.aliga-single .fexar-single {
+  display: block;
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: url(../images/sprite/btn-fexar-aliga.png) no-repeat center;
+  z-index: 99;
+}
+/* line 227, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela {
+  display: block;
+  padding: 60px 0 0 160px;
+  position: relative;
+}
+/* line 232, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela > img {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+/* line 239, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article .header-article-single {
+  display: block;
+  width: 100%;
+}
+/* line 242, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article .header-article-single h3 {
+  padding-top: 0.3125em;
+  font: 1.875em ProximaNova-Semibold, arial, helvetica;
+  color: #ff7200;
+}
+/* line 248, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article .header-article-single p {
+  font: 0.8125em ProximaNova-Semibold, arial, helvetica;
+  color: #7a8094;
+}
+/* line 254, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article > p {
+  font: 0.8125em ProximaNova-Regular, arial, helvetica;
+  color: #7a8094;
+  margin-top: 25px;
+}
+/* line 259, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article > p a {
+  color: #ff7200;
+  text-decoration: none;
+}
+/* line 265, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article > a {
+  display: none;
+}
+/* line 268, ../sass/modules/aliga.scss */
+.aliga-single .sect-resumo-freela article > a.com-link {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 190px;
+  height: 45px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  background: #ff7200 url(../images/sprite/icon-link.png) no-repeat 19px 11px;
+  display: block;
+  margin-top: 30px;
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 0 0 30px;
+}
+/* line 291, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela {
+  display: none;
+  margin-top: 55px;
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* line 297, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela.com-port {
+  display: block;
+}
+/* line 301, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela .header-port-freela {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+/* line 307, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela .header-port-freela:before {
+  content: "";
+  width: 414px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ff7200;
+}
+/* line 317, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela .header-port-freela:after {
+  content: "";
+  width: 414px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #ff7200;
+}
+/* line 327, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela .header-port-freela h2 {
+  padding-top: 80px;
+  position: relative;
+  font: 2.3125em ProximaNova-Extrabold, arial, helvetica;
+  color: #ff7200;
+}
+/* line 333, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela .header-port-freela h2:before {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 66px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: white url(../images/sprite/tit-free-port.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -33px;
+}
+/* line 352, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela > ul {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+/* line 357, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela > ul li {
+  float: left;
+  list-style: none;
+  margin: 0 7px 30px 7px;
+  position: relative;
+}
+/* line 364, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela > ul li a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-right-radius: 110px;
+}
+/* line 374, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela > ul li a:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff7200 url(../images/sprite/icone-mais-port.png) no-repeat center;
+  border-top-left-radius: 95px;
+  border-top-right-radius: 95px;
+  border-bottom-left-radius: 95px;
+  border-bottom-right-radius: 95px;
+  border-top-left-radius: 95px;
+  border-bottom-left-radius: 95px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/* line 394, ../sass/modules/aliga.scss */
+.aliga-single .sect-portfolio-freela > ul li a:hover:before {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+}
+
+/* line 405, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li {
+  -webkit-animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(1) {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(3) {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(4) {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(6) {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(7) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(8) {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(9) {
+  -webkit-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(10) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(11) {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(12) {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(13) {
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(14) {
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+/* line 409, ../sass/modules/aliga.scss */
+.ativado .aliga-single .sect-portfolio-freela > ul li:nth-child(15) {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+/* line 416, ../sass/modules/aliga.scss */
+.mask-port {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8) top center;
+  z-index: 99999;
+  text-align: center;
+  -webkit-animation: fadeOut 0.5s ease-out both;
+  -moz-animation: fadeOut 0.5s ease-out both;
+  animation: fadeOut 0.5s ease-out both;
+}
+/* line 426, ../sass/modules/aliga.scss */
+.mask-port.ativado {
+  display: block;
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+}
+/* line 431, ../sass/modules/aliga.scss */
+.mask-port .center {
+  width: 650px;
+  margin: 90px auto;
+  text-align: center;
+  position: relative;
+  padding: 30px 0;
+}
+/* line 438, ../sass/modules/aliga.scss */
+.mask-port .center img {
+  border: 10px solid #202434;
+}
+/* line 443, ../sass/modules/aliga.scss */
+.mask-port .fexar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #ff7200 url(../images/sprite/btn-fexar-aliga.png) no-repeat center;
+  z-index: 99;
+}
+
+/* line 1, ../sass/modules/oquesomos.scss */
+.bg-oquesomos {
+  display: block;
+  width: 100%;
+  height: 950px;
+  position: absolute;
+  top: auto;
+  background: url(../images/bg-oquesomos.png) no-repeat center;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+
+/* line 14, ../sass/modules/oquesomos.scss */
+#oquesomos article {
+  padding-top: 120px;
+  width: 540px;
+  position: relative;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 21, ../sass/modules/oquesomos.scss */
+#oquesomos article p {
+  font: 1.125em ProximaNova-Semibold, arial, helvetica;
+  color: #272135;
+}
+/* line 26, ../sass/modules/oquesomos.scss */
+#oquesomos article h5 {
+  font: 1.875em ProximaNova-Extrabold, arial, helvetica;
+  line-height: 24px;
+  color: #ff7200;
+  margin: 10px 0;
+}
+
+/* line 1, ../sass/modules/portfolio.scss */
+#slide-port {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 6, ../sass/modules/portfolio.scss */
+#slide-port > ul {
+  display: none;
+  width: 100%;
+}
+/* line 10, ../sass/modules/portfolio.scss */
+#slide-port > ul.selecionado {
+  display: block;
+}
+/* line 14, ../sass/modules/portfolio.scss */
+#slide-port > ul li {
+  float: left;
+  list-style: none;
+  margin: 0 7px 30px 7px;
+  position: relative;
+  -webkit-animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 22, ../sass/modules/portfolio.scss */
+#slide-port > ul li:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 28, ../sass/modules/portfolio.scss */
+#slide-port > ul li a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom-right-radius: 110px;
+}
+/* line 38, ../sass/modules/portfolio.scss */
+#slide-port > ul li a:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff7200 url(../images/sprite/icone-mais-port.png) no-repeat center;
+  border-top-left-radius: 95px;
+  border-top-right-radius: 95px;
+  border-bottom-left-radius: 95px;
+  border-bottom-right-radius: 95px;
+  border-top-left-radius: 95px;
+  border-bottom-left-radius: 95px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/* line 58, ../sass/modules/portfolio.scss */
+#slide-port > ul li a:hover:before {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+}
+/* line 66, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo {
+  display: block;
+}
+/* line 68, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li {
+  -webkit-animation: rotatePps 0.1s ease-out both, fadeOut 0.3s ease-out both, slideRightc 0.3s ease-out;
+  -moz-animation: rotatePps 0.1s ease-out both, fadeOut 0.3s ease-out both, slideRightc 0.3s ease-out;
+  animation: rotatePps 0.1s ease-out both, fadeOut 0.3s ease-out both, slideRightc 0.3s ease-out;
+}
+/* line 70, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(0) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 73, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(1) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 76, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 79, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 82, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 85, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(5) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 88, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(6) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 91, ../sass/modules/portfolio.scss */
+#slide-port > ul.removendo li:nth-child(7) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  animation-delay: 0;
+}
+
+/* line 99, ../sass/modules/portfolio.scss */
+#nav-slide-port {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* line 104, ../sass/modules/portfolio.scss */
+#nav-slide-port a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  border: 8px solid #bcbd9b;
+  text-align: center;
+  text-decoration: none;
+  font: 1.125em ProximaNova-Bold, arial, helvetica;
+  color: #bcbd9b;
+  padding-top: 12px;
+  margin: 30px 7px;
+  -webkit-transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(6) {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(7) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 127, ../sass/modules/portfolio.scss */
+#nav-slide-port a:nth-child(8) {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+/* line 133, ../sass/modules/portfolio.scss */
+#nav-slide-port a:hover {
+  color: #ff7200;
+  border: 8px solid #ff7200;
+}
+/* line 139, ../sass/modules/portfolio.scss */
+#nav-slide-port a.ativado {
+  color: #8c8282;
+  border: 8px solid #8c8282;
+  cursor: default;
+}
+/* line 144, ../sass/modules/portfolio.scss */
+#nav-slide-port a.ativado:hover {
+  color: #8c8282;
+  border: 8px solid #8c8282;
+}
+
+/* line 2, ../sass/modules/contato.scss */
+#contato .coluna-esquerda {
+  width: 615px;
+  margin-left: 20px;
+  position: relative;
+  display: inline-block;
+  -webkit-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out;
+}
+/* line 9, ../sass/modules/contato.scss */
+#contato .coluna-esquerda .sub-titulo {
+  width: 430px;
+  position: absolute;
+  top: 125px;
+  right: 20px;
+  font: 1.125em ProximaNova-Regular, arial, helvetica;
+  color: #202434;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 18, ../sass/modules/contato.scss */
+#contato .coluna-esquerda .sub-titulo span {
+  color: #ff7200;
+}
+/* line 23, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form {
+  width: 430px;
+  position: absolute;
+  top: 240px;
+  right: 20px;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 30, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label {
+  -webkit-animation: fadeIn 0.3s ease-out both, slideLeft 0.3s ease-out;
+  -moz-animation: fadeIn 0.3s ease-out both, slideLeft 0.3s ease-out;
+  animation: fadeIn 0.3s ease-out both, slideLeft 0.3s ease-out;
+  position: relative;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 34, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form label:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 41, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form input[type="text"], #contato .coluna-esquerda form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #202434;
+  border: none;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  color: #7a8094;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+/* line 8, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]::-webkit-input-placeholder, #contato .coluna-esquerda form textarea::-webkit-input-placeholder {
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: #7a8094;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 14, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:-moz-placeholder, #contato .coluna-esquerda form textarea:-moz-placeholder {
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: #7a8094;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 19, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]::-moz-placeholder, #contato .coluna-esquerda form textarea::-moz-placeholder {
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: #7a8094;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 24, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:-ms-input-placeholder, #contato .coluna-esquerda form textarea:-ms-input-placeholder {
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: #7a8094;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 67, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form input[type="text"]:active, #contato .coluna-esquerda form input[type="text"]:focus, #contato .coluna-esquerda form textarea:active, #contato .coluna-esquerda form textarea:focus {
+  background-color: #ff7200;
+  color: white;
+}
+/* line 8, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:active::-webkit-input-placeholder, #contato .coluna-esquerda form input[type="text"]:focus::-webkit-input-placeholder, #contato .coluna-esquerda form textarea:active::-webkit-input-placeholder, #contato .coluna-esquerda form textarea:focus::-webkit-input-placeholder {
+  color: white;
+}
+/* line 14, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:active:-moz-placeholder, #contato .coluna-esquerda form input[type="text"]:focus:-moz-placeholder, #contato .coluna-esquerda form textarea:active:-moz-placeholder, #contato .coluna-esquerda form textarea:focus:-moz-placeholder {
+  color: white;
+}
+/* line 19, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:active::-moz-placeholder, #contato .coluna-esquerda form input[type="text"]:focus::-moz-placeholder, #contato .coluna-esquerda form textarea:active::-moz-placeholder, #contato .coluna-esquerda form textarea:focus::-moz-placeholder {
+  color: white;
+}
+/* line 24, ../sass/vendor/bourbon/css3/_placeholder.scss */
+#contato .coluna-esquerda form input[type="text"]:active:-ms-input-placeholder, #contato .coluna-esquerda form input[type="text"]:focus:-ms-input-placeholder, #contato .coluna-esquerda form textarea:active:-ms-input-placeholder, #contato .coluna-esquerda form textarea:focus:-ms-input-placeholder {
+  color: white;
+}
+/* line 77, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form textarea {
+  height: auto;
+  min-height: 145px;
+  padding-top: 20px;
+}
+/* line 83, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form input[type="submit"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 140px;
+  height: 45px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #ff7200;
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: #ffbc85;
+  border: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 98, ../sass/modules/contato.scss */
+#contato .coluna-esquerda form input[type="submit"]:hover {
+  color: white;
+}
+/* line 106, ../sass/modules/contato.scss */
+#contato #aside-direita {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 260px;
+  position: absolute;
+  top: 6em;
+  right: 0;
+  -webkit-animation: fadeIn 0.5s ease-out both;
+  -moz-animation: fadeIn 0.5s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 116, ../sass/modules/contato.scss */
+#contato #aside-direita .selo-contato {
+  width: 200px;
+  height: 200px;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  display: block;
+  background: url(../images/sprite/selo-seliga.png) no-repeat center;
+  margin-bottom: 40px;
+}
+/* line 124, ../sass/modules/contato.scss */
+#contato #aside-direita > p {
+  font: 1.375em ProximaNova-Bold, arial, helvetica;
+  color: #202434;
+  display: block;
+  width: 100%;
+}
+/* line 130, ../sass/modules/contato.scss */
+#contato #aside-direita > p span {
+  color: #ff7200;
+}
+/* line 135, ../sass/modules/contato.scss */
+#contato #aside-direita > small {
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  line-height: 16px;
+  color: #7a8094;
+  display: block;
+  margin: 10px 0;
+}
+/* line 143, ../sass/modules/contato.scss */
+#contato #aside-direita > a {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 190px;
+  height: 46px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #202434;
+  border: none;
+  font: 0.875em ProximaNova-Regular, arial, helvetica;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15px;
+  margin: 20px 0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 164, ../sass/modules/contato.scss */
+#contato #aside-direita > a:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #ff7200 url(../images/sprite/icon-selecione.png) no-repeat 10px 9px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 182, ../sass/modules/contato.scss */
+#contato #aside-direita > a:hover {
+  background-color: #ff7200;
+}
+/* line 185, ../sass/modules/contato.scss */
+#contato #aside-direita > a:hover:before {
+  background-color: white;
+}
+/* line 191, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+/* line 196, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: 0.875em ProximaNova-Bold, arial, helvetica;
+  color: #202434;
+}
+/* line 203, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > small span {
+  color: #ff7200;
+}
+/* line 210, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 54px;
+  height: 54px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: inline-block;
+  background-color: #bcbd9b;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 226, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a.facebook {
+  background-image: url(../images/sprite/icone-face.png);
+  background-position: 21px 16px;
+}
+/* line 231, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a.likedin {
+  background-image: url(../images/sprite/icone-liked.png);
+  background-position: 17px 17px;
+}
+/* line 236, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a.twitter {
+  background-image: url(../images/sprite/icone-twitter.png);
+  background-position: 16px 18px;
+}
+/* line 241, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a.youtube {
+  background-image: url(../images/sprite/icone-you.png);
+  background-position: 16px 14px;
+}
+/* line 247, ../sass/modules/contato.scss */
+#contato #aside-direita .redes-sociais > a:hover {
+  background-color: #ff7200;
+}

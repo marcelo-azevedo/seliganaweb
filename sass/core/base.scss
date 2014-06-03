@@ -1,0 +1,26 @@
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+// ##### Variaveis #####
+
+//cores
+$laranja: #ff7200;
+$azul-escuro: #202434;
+$azul-link-menu: #7a8094;
+$cinza: #8c8282;
+$cinza-escuro: #272135;
+$musgo: #bcbd9b;
+
+
+//fonts
+$bold: ProximaNova-Bold, arial, helvetica;
+$semibold: ProximaNova-Semibold, arial, helvetica;
+$extrabold: ProximaNova-Extrabold, arial, helvetica;
+$regular: ProximaNova-Regular, arial, helvetica;

@@ -1,0 +1,160 @@
+#header{
+	@include size(100%);
+	@extend %clearfix;
+	text-align: center;
+	z-index: 9;
+	position:relative;
+
+	.bg-header{
+		background: url(../images/bg.png) top center, 
+					url("../images/bg-azul.jpg") top center;
+		@include size(100%);
+		@extend %clearfix;
+		@include position(fixed, 0 0 0 0);
+		@include animation(bgSlide 0.3s linear both);
+
+	}
+
+	&.saida .bg-header{
+		@include animation(bgSlideSaida 0.4s linear both);
+		@include animation-delay(0.3s);
+	}
+
+	h1{
+		@include hide-text;
+		@include size(252px 153px);
+		background-image: url(../images/sprite/logo.png);
+		margin: 0 auto;
+		position: relative;
+		left: 40px;
+		top: 30px;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		@include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both);
+		@include animation-delay(0.3s);
+
+	}
+
+	&.saida h1{
+		@include animation(fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both);
+		@include animation-delay(0.2s);
+	}
+
+	h2{
+		font: 30px $bold;
+		color: white;
+		margin-top: em(30);
+		margin-bottom: em(30);
+		position: relative;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		@include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+		@include animation-delay(0.4s);
+
+		span{
+			color: $laranja;
+		}
+	}
+
+	&.saida h2{
+		@include animation(fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both);
+		@include animation-delay(0.1s);
+	}
+}
+
+#menu-home{
+	width: 960px;
+	margin: 0 auto;
+
+	a{
+		@include size(220px auto);
+		display: block;
+		padding-top: 250px;
+		background-image: url("../images/sprite/oquesomos.png");
+		background-repeat: no-repeat;
+		text-align: center;
+		float: left;
+		margin: 0 10px;
+		position: relative;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		left: 40px;
+		@include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out both);
+		@include animation-delay(0.5s);
+
+		font: 25px $bold;
+		color: white;
+		text-decoration: none;
+
+		span{
+			color: $laranja;
+		}
+
+		&:hover, &:active{
+			background-image: url("../images/sprite/oquesomos-hover.png");
+			@include transition (all 0.5s ease-in-out);
+		}
+
+		&.link-aliga{
+			background-image: url("../images/sprite/aliga.png");
+			@include animation-delay(0.6s);
+
+			&:hover, &:active{
+				background-image: url("../images/sprite/aliga-hover.png");
+			}
+		}
+
+		&.link-portfolio{
+			background-image: url("../images/sprite/portfolio.png");
+			@include animation-delay(0.7s);
+
+			&:hover, &:active{
+				background-image: url("../images/sprite/portfolio-hover.png");
+			}
+		}
+
+		&.link-contato{
+			background-image: url("../images/sprite/contato.png");
+			@include animation-delay(0.8s);
+
+			&:hover, &:active{
+				background-image: url("../images/sprite/contato-hover.png");
+			}
+		}
+	}
+
+}
+
+.saida #menu-home a{
+	@include animation(fadeOut 0.5s ease-out both, slideRight 0.3s ease-out both);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

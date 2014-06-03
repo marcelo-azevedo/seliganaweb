@@ -1,0 +1,10 @@
+body{
+	background: #fff url(../images/bg.png) top center;
+}
+
+.container{
+	@include size(100%);
+	@extend %clearfix;
+	@include position(relative, 0 0 0 0);
+}
+

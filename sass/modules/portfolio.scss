@@ -1,0 +1,155 @@
+#slide-port{
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+
+	> ul{
+		display: none;
+		width: 100%;
+
+		&.selecionado{
+			display: block;
+		}
+
+		li{
+			float: left;
+			list-style: none;
+			margin: 0 7px 30px 7px;
+			position: relative;
+			@include animation(rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+
+			@for $i from 1 through 8 {
+			  &:nth-child(#{$i}) { 
+			  	$valor: $i/10 + s;
+			  	@include animation-delay($valor); 
+			  }
+			}
+
+			a{
+				@include size(220);
+				display: block;
+				position: relative;
+				overflow: hidden;
+				@include border-top-radius(110px);
+				@include border-bottom-radius(110px);
+				@include border-left-radius(110px);
+				@include border-right-radius(110px);
+
+				&:before{
+					content: "";
+					@include size(200);
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					background: $laranja url(../images/sprite/icone-mais-port.png) no-repeat center;
+					@include border-top-radius(95px);
+					@include border-bottom-radius(95px);
+					@include border-left-radius(95px);
+					@include border-right-radius(95px);
+					opacity: 0;
+					filter:alpha(opacity=0); /* For IE8 and earlier */
+					-webkit-transition: opacity 0.3s ease-in-out;
+				    -moz-transition: opacity 0.3s ease-in-out;
+				    transition: opacity 0.3s ease-in-out;
+
+				}
+
+				&:hover{
+					&:before{
+						opacity: 0.8;
+						filter:alpha(opacity=80); /* For IE8 and earlier */
+					}
+				}
+			}
+		}
+
+		&.removendo{
+			display: block;
+			li{
+				@include animation(rotatePps 0.1s ease-out both, fadeOut 0.3s ease-out both, slideRightc 0.3s ease-out);
+				&:nth-child(0) { 
+					@include animation-delay(0.7s); 
+				}
+				&:nth-child(1) { 
+					@include animation-delay(0.6s); 
+				}
+				&:nth-child(2) { 
+					@include animation-delay(0.5s); 
+				}
+				&:nth-child(3) { 
+					@include animation-delay(0.4s); 
+				}
+				&:nth-child(4) { 
+					@include animation-delay(0.3s); 
+				}
+				&:nth-child(5) { 
+					@include animation-delay(0.2s); 
+				}
+				&:nth-child(6) { 
+					@include animation-delay(0.1s); 
+				}
+				&:nth-child(7) { 
+					@include animation-delay(0); 
+				}
+			}
+		}
+	}
+}
+
+#nav-slide-port{
+	display: block;
+	width: 100%;
+	text-align: center;
+
+	a{
+		display: inline-block;
+		@include box-sizing(border-box);
+		@include size(60);
+		@include border-top-radius(30px);
+		@include border-bottom-radius(30px);
+		@include border-left-radius(30px);
+		@include border-right-radius(30px);
+		position: relative;
+		border: 8px solid $musgo;
+		text-align: center;
+		text-decoration: none;
+		font: em(18) $bold;
+		color: $musgo;
+		padding-top: 12px;
+		margin: 30px 7px;
+		-webkit-transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+	    -moz-transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+	    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+	    @include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+
+		@for $i from 1 through 8 {
+		  &:nth-child(#{$i}) { 
+		  	$valor: 0.3 + $i/10 + s;
+		  	@include animation-delay($valor); 
+		  }
+		}
+
+		&:hover{
+			color: $laranja;
+			border: 8px solid $laranja;
+
+		}
+
+		&.ativado{
+			color: $cinza;
+			border: 8px solid $cinza;
+			cursor: default;
+
+			&:hover{
+				color: $cinza;
+				border: 8px solid $cinza;
+
+			}
+		}
+
+	}
+}
+
+
+

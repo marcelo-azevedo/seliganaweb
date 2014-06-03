@@ -1,0 +1,23 @@
+%image-replace-indent {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@mixin image-replace($image) {
+  @extend %image-replace-indent;
+  background-image: url($image);
+}
+
+@mixin svg-background-image($image) {
+  background-image: url("#{$image}.svg");
+
+  .no-svg & {
+    background-image: url("#{$image}.png");
+  }
+}
+
+@mixin svg-image-replace($base-path) {
+  @include svg-background-image($base-path);
+  @extend %image-replace-indent;
+}

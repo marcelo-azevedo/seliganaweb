@@ -1,0 +1,474 @@
+#aliga{ 
+	> section{
+		display: block;
+		width: 100%;
+		position: relative;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		@extend %clearfix;
+		@include animation(fadeIn 0.5s ease-out both);
+		
+		@for $i from 1 through 6 {
+		  &:nth-child(#{$i}) { 
+		  	$valor: $i/3 + s;
+		  	@include animation-delay($valor); 
+		  }
+		}
+
+		@for $i from 1 through 8 {
+		  &:nth-child(2) .freelances dl:nth-child(#{$i}) { 
+		  	$ss: 0.5;
+		  	$valo: $ss + $i/10 + s;
+		  	@include animation-delay($valo); 
+		  }
+		  &:nth-child(3) .freelances dl:nth-child(#{$i}) { 
+		  	$sss: 1.0;
+		  	$valoss : $sss + $i/10 + s;
+		  	@include animation-delay($valoss); 
+		  }
+		  &:nth-child(4) .freelances dl:nth-child(#{$i}) { 
+		  	$sss: 1.5;
+		  	$valoss : $sss + $i/10 + s;
+		  	@include animation-delay($valoss); 
+		  }
+		}
+
+	}
+
+	.header-section-aliga{
+		width: 100%;
+		display: block;
+		text-align: center;
+		position: relative;
+
+		&:before{
+			content: "";
+			@include size(414 3);
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			background-color: $laranja;
+		}
+
+		&:after{
+			content: "";
+			@include size(414 3);
+			display: block;
+			position: absolute;
+			top: 30px;
+			right: 0;
+			background-color: $laranja;
+		}
+
+		h2{
+			padding-top: 80px;
+			position: relative;
+			font: em(37) $extrabold;
+			color: $laranja;
+
+			&:before{
+				content: "";
+				display: block;
+				@include size(66);
+				@include border-top-radius(35px);
+				@include border-bottom-radius(35px);
+				@include border-left-radius(35px);
+				@include border-right-radius(35px);
+				background: $azul-escuro url(../images/sprite/tit-free-des.png) no-repeat center;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -33px;
+
+			}
+
+			&.gerente{
+				&:before{
+					background-image: url(../images/sprite/tit-free-dev.png)
+				}
+			}
+			&.redator{
+				&:before{
+					background-image: url(../images/sprite/tit-free-red.png)
+				}
+			}
+			&.dev-front{
+				&:before{
+					background-image: url(../images/sprite/tit-free-dev.png)
+				}
+			}
+			&.dev-back{
+				&:before{
+					background-image: url(../images/sprite/tit-free-dev-b.png)
+				}
+			}
+		}
+	}
+
+	.freelances{
+		display: block;
+		width: 720px;
+		@extend %clearfix;
+		margin: 60px auto;
+		text-align: center;
+
+		dl{
+			display: inline-block;
+			@include size(140 auto);
+			margin: 0 20px;
+			text-align: center;
+			cursor: pointer;
+			position:relative;
+			top: 0;
+			@include animation(fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+
+
+			dt{
+				@include size(140 148);
+				position: relative;
+				top: 0;
+
+				&:before{
+					content: "Veja o Perfil Completo";
+					@include box-sizing(border-box);
+					padding-top: 50px;
+					font: em(14) $semibold;
+					color: white;
+					@include size(130 130);
+					position: absolute;
+					top: 5px;
+					left: 6px;
+					background-color: $laranja;
+					@include border-top-radius(75px);
+					@include border-bottom-radius(75px);
+					@include border-left-radius(75px);
+					@include border-right-radius(75px);
+					opacity: 0;
+					filter:alpha(opacity=0); /* For IE8 and earlier */
+					-webkit-transition: opacity 0.3s ease-in-out;
+				    -moz-transition: opacity 0.3s ease-in-out;
+				    transition: opacity 0.3s ease-in-out;
+				}
+			}
+
+			dd{
+				position: relative;
+				bottom: 0;
+			}
+
+			h4{
+				font: em(17) $semibold;
+				color: $laranja;
+			}
+
+			h5{
+				font: em(13) $semibold;
+				color: $cinza;
+			}
+
+			span{
+				display: none;
+			}
+
+			&:hover{
+
+				dt{
+
+					&:before{
+						opacity: 0.8;
+						filter:alpha(opacity=80); /* For IE8 and earlier */
+					}
+				}
+
+			}
+
+		}
+	}
+
+	
+}
+
+.mask-aliga{
+	display: none;
+	@include position(absolute, 100% 0 0 0);
+	@include size(100%);
+	background: $azul-escuro url(../images/bg.png) top center;
+	z-index: 999;
+
+	&.ativado{
+		display: block;
+		@include animation(heightSingle 0.5s ease-out both, fadeIn 0.5s ease-out both);
+	}
+}
+
+.aliga-single{
+	width: 940px;
+    margin: 0 auto;
+	display: block;
+	position: relative;
+	z-index: 9999;
+	opacity: 0;
+	filter:alpha(opacity=0); /* For IE8 and earlier */
+	@include animation(fadeIn 0.5s ease-out both);
+	@include animation-delay(0.7s);
+
+
+	.fexar-single{
+		display: block;
+		@include size(26 25);
+		position: absolute;
+		top: 20px;
+		right: 0;
+		background: url(../images/sprite/btn-fexar-aliga.png) no-repeat center;
+		z-index: 99;
+	}
+
+	.sect-resumo-freela{
+		display: block;
+		padding: 60px 0 0 160px;
+		position: relative; 
+
+		> img {
+			position: absolute;
+			top: 60px;
+			left: 0;
+		}
+
+		article{
+			.header-article-single{
+				display: block;
+				width: 100%;
+				h3{
+					padding-top: em(5);
+					font: em(30) $semibold;
+					color: $laranja;
+				}
+
+				p{
+					font: em(13) $semibold;
+					color: $azul-link-menu;
+				}
+			}
+
+			 > p{
+				font: em(13) $regular;
+				color: $azul-link-menu;
+				margin-top: 25px;
+
+				a{
+					color: $laranja;
+					text-decoration: none;
+				}
+			}
+
+			> a{
+				display: none;
+
+				&.com-link{
+					display: block;
+					@include box-sizing(border-box);
+					@include size(190 45);
+					@include border-top-radius(75px);
+					@include border-bottom-radius(75px);
+					@include border-left-radius(75px);
+					@include border-right-radius(75px);
+					background: $laranja url(../images/sprite/icon-link.png) no-repeat 19px 11px;
+					display: block;
+					margin-top: 30px;
+					font: em(14) $regular;
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					padding: 14px 0 0 30px;
+				}
+
+			}
+		}
+
+	}
+
+	.sect-portfolio-freela{
+		display: none;
+		margin-top: 55px;
+		@include animation(fadeIn 0.5s ease-out both);
+		@include animation-delay(0.9s);
+
+		&.com-port{
+			display: block;
+		}
+
+		.header-port-freela{
+			width: 100%;
+			display: block;
+			text-align: center;
+			position: relative;
+
+			&:before{
+				content: "";
+				@include size(414 3);
+				display: block;
+				position: absolute;
+				top: 30px;
+				left: 0;
+				background-color: $laranja;
+			}
+
+			&:after{
+				content: "";
+				@include size(414 3);
+				display: block;
+				position: absolute;
+				top: 30px;
+				right: 0;
+				background-color: $laranja;
+			}
+
+			h2{
+				padding-top: 80px;
+				position: relative;
+				font: em(37) $extrabold;
+				color: $laranja;
+
+				&:before{
+					content: "";
+					display: block;
+					@include size(66);
+					@include border-top-radius(35px);
+					@include border-bottom-radius(35px);
+					@include border-left-radius(35px);
+					@include border-right-radius(35px);
+					background: white url(../images/sprite/tit-free-port.png) no-repeat center;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -33px;
+
+				}
+			}
+
+		}
+
+		> ul{
+			display: block;
+			width: 100%;
+			margin-top: 40px;
+
+			li{
+				float: left;
+				list-style: none;
+				margin: 0 7px 30px 7px;
+				position: relative;
+				
+
+				a{
+					@include size(220);
+					display: block;
+					position: relative;
+					overflow: hidden;
+					@include border-top-radius(110px);
+					@include border-bottom-radius(110px);
+					@include border-left-radius(110px);
+					@include border-right-radius(110px);
+
+					&:before{
+						content: "";
+						@include size(200);
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						background: $laranja url(../images/sprite/icone-mais-port.png) no-repeat center;
+						@include border-top-radius(95px);
+						@include border-bottom-radius(95px);
+						@include border-left-radius(95px);
+						@include border-right-radius(95px);
+						opacity: 0;
+						filter:alpha(opacity=0); /* For IE8 and earlier */
+						-webkit-transition: opacity 0.3s ease-in-out;
+					    -moz-transition: opacity 0.3s ease-in-out;
+					    transition: opacity 0.3s ease-in-out;
+
+					}
+
+					&:hover{
+						&:before{
+							opacity: 0.8;
+							filter:alpha(opacity=80); /* For IE8 and earlier */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.ativado .aliga-single .sect-portfolio-freela > ul li{
+	@include animation(rotatePp 0.1s ease-out both, fadeIn 0.5s ease-out both, slideLeft 0.3s ease-out);
+
+	@for $i from 1 through 15 {
+	  &:nth-child(#{$i}) { 
+	  	$valor: 1 + $i/10 + s;
+	  	@include animation-delay($valor); 
+	  }
+	}
+}
+
+.mask-port{
+	display: none;
+	@include position(absolute, 0 0 0 0);
+	top: 0;
+	@include size(100%);
+	background: rgba(255,255,255,0.8) top center;
+	z-index: 99999;
+	text-align: center;
+	@include animation(fadeOut 0.5s ease-out both);
+
+	&.ativado{
+		display: block;
+		@include animation(fadeIn 0.5s ease-out both);
+	}
+
+	.center{
+		width: 650px;
+		margin: 90px auto;
+		text-align: center;
+		position: relative;
+		padding: 30px 0;
+
+		img{
+			border: 10px solid $azul-escuro;
+		}
+	}
+
+	.fexar{
+		display: block;
+		@include size(40);
+		@include border-top-radius(35px);
+		@include border-bottom-radius(35px);
+		@include border-left-radius(35px);
+		@include border-right-radius(35px);
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		background: $laranja url(../images/sprite/btn-fexar-aliga.png) no-repeat center;
+		z-index: 99;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

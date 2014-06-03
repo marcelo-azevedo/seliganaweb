@@ -1,0 +1,253 @@
+// ********** keyframes **********
+
+// fadeIn
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;filter:alpha(opacity=0)}
+	100% {opacity: 1;filter:alpha(opacity=100)}
+}
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;filter:alpha(opacity=0)}
+	100% {opacity: 1;filter:alpha(opacity=100)}
+}
+@-o-keyframes fadeIn {
+	0% {opacity: 0;filter:alpha(opacity=0)}
+	100% {opacity: 1;filter:alpha(opacity=100)}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;filter:alpha(opacity=0)}
+	100% {opacity: 1;filter:alpha(opacity=100)}
+}
+
+// fadeOut
+
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;filter:alpha(opacity=100)}
+	100% {opacity: 0;filter:alpha(opacity=0)}
+}
+@-moz-keyframes fadeOut {
+	0% {opacity: 1;filter:alpha(opacity=100)}
+	100% {opacity: 0;filter:alpha(opacity=0)}
+}
+@-o-keyframes fadeOut {
+	0% {opacity: 1;filter:alpha(opacity=100)}
+	100% {opacity: 0;filter:alpha(opacity=0)}
+}
+@keyframes fadeOut {
+	0% {opacity: 1;filter:alpha(opacity=100)}
+	100% {opacity: 0;filter:alpha(opacity=0)}
+}
+
+// slideLeft
+
+@-webkit-keyframes slideLeft {
+	0% {left: 40px;}
+	100% {left: 0;}
+}
+@-moz-keyframes slideLeft {
+	0% {left: 40px;}
+	100% {left: 0;}
+}
+@-o-keyframes slideLeft {
+	0% {left: 40px;}
+	100% {left: 0;}
+}
+@keyframes slideLeft {
+	0% {left: 40px;}
+	100% {left: 0;}
+}
+
+// slideRight
+
+@-webkit-keyframes slideRight {
+	0% {left: 0;}
+	100% {left: -40px;}
+}
+@-moz-keyframes slideRight {
+	0% {left: 0;}
+	100% {left: -40px;}
+}
+@-o-keyframes slideRight {
+	0% {left: 0;}
+	100% {left: -40px;}
+}
+@keyframes slideRight {
+	0% {left: 0;}
+	100% {left: -40px;}
+}
+
+// slideRightc
+
+@-webkit-keyframes slideRightc {
+	0% {left: 0;}
+	100% {left: 40px;}
+}
+@-moz-keyframes slideRightc {
+	0% {left: 0;}
+	100% {left: 40px;}
+}
+@-o-keyframes slideRightc {
+	0% {left: 0;}
+	100% {left: 40px;}
+}
+@keyframes slideRightc {
+	0% {left: 0;}
+	100% {left: 40px;}
+}
+
+// bgSlide
+
+@-webkit-keyframes bgSlide {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+@-moz-keyframes bgSlide {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+@-o-keyframes bgSlide {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+@keyframes bgSlide {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+
+// bgSlideSaida
+
+@-webkit-keyframes bgSlideSaida {
+	0% {right: 0;}
+	100% {right: 100%;}
+}
+@-moz-keyframes bgSlideSaida {
+	0% {right: 0;}
+	100% {right: 100%;}
+}
+@-o-keyframes bgSlideSaida {
+	0% {right: 0;}
+	100% {right: 100%;}
+}
+@keyframes bgSlideSaida {
+	0% {right: 0;}
+	100% {right: 100%;}
+}
+
+// tanUlX (Menu Topo)
+
+@-webkit-keyframes tanUlX {
+	0% {width: 0;}
+	100% {width: 307px;}
+}
+@-moz-keyframes tanUlX {
+	0% {width: 0;}
+	100% {width: 307px;}
+}
+@-o-keyframes tanUlX {
+	0% {width: 0;}
+	100% {width: 307px;}
+}
+@keyframes tanUlX {
+	0% {width: 0;}
+	100% {width: 307px;}
+}
+
+// rotate (Menu Topo)
+
+@-webkit-keyframes rotate {
+	0% {-webkit-transform: none}
+	100% {-webkit-transform: rotate(-540deg)}
+}
+@-moz-keyframes rotate {
+	0% {-moz-transform: none}
+	100% {-moz-transform: rotate(-540deg)}
+}
+@-o-keyframes rotate {
+	0% {-o-transform: none}
+	100% {-o-transform: rotate(-540deg)}
+}
+@keyframes rotate {
+	0% {transform: none}
+	100% {transform: rotate(-540deg)}
+}
+
+// rotate (H1 paginas internas)
+
+@-webkit-keyframes rotateP {
+	0% {-webkit-transform: rotate(-270deg)}
+	100% {-webkit-transform: rotate(-360deg)}
+}
+@-moz-keyframes rotateP {
+	0% {-moz-transform: rotate(-270deg)}
+	100% {-moz-transform: rotate(-360deg)}
+}
+@-o-keyframes rotateP {
+	0% {-o-transform: rotate(-270deg)}
+	100% {-o-transform: rotate(-360deg)}
+}
+@keyframes rotateP {
+	0% {transform: rotate(-270deg)}
+	100% {transform: rotate(-360deg)}
+}
+
+
+// rotate (portifolio)
+
+@-webkit-keyframes rotatePp {
+	0% {-webkit-transform: rotate(-355deg)}
+	100% {-webkit-transform: rotate(-360deg)}
+}
+@-moz-keyframes rotatePp {
+	0% {-moz-transform: rotate(-355deg)}
+	100% {-moz-transform: rotate(-360deg)}
+}
+@-o-keyframes rotatePp {
+	0% {-o-transform: rotate(-355deg)}
+	100% {-o-transform: rotate(-360deg)}
+}
+@keyframes rotatePp {
+	0% {transform: rotate(-355deg)}
+	100% {transform: rotate(-360deg)}
+}
+
+// rotate (portifolio saida)
+
+@-webkit-keyframes rotatePps {
+	0% {-webkit-transform: rotate(-360deg)}
+	100% {-webkit-transform: rotate(-355deg)}
+}
+@-moz-keyframes rotatePps {
+	0% {-moz-transform: rotate(-360deg)}
+	100% {-moz-transform: rotate(-355deg)}
+}
+@-o-keyframes rotatePps {
+	0% {-o-transform: rotate(-360deg)}
+	100% {-o-transform: rotate(-355deg)}
+}
+@keyframes rotatePps {
+	0% {transform: rotate(-360deg)}
+	100% {transform: rotate(-355deg)}
+}
+
+// height aliga single
+
+@-webkit-keyframes heightSingle {
+	0% {top: 100%}
+	100% {top: 94px}
+}
+@-moz-keyframes heightSingle {
+	0% {top: 100%}
+	100% {top: 94px}
+}
+@-o-keyframes heightSingle {
+	0% {top: 100%}
+	100% {top: 94px}
+}
+@keyframes heightSingle {
+	0% {top: 100%}
+	100% {top: 94px}
+}
+
+
+
+

@@ -1,0 +1,73 @@
+{
+	"progetos": [
+		{
+			"nome": "Daniel Telles",
+			"imagem": "ele.png",
+			"oquefaz": "Gerente de projetos atendimento",
+			"resumo": "",
+			"url": "",
+			"portifolio": ["01.png", "03.png"]
+
+		},
+		{
+			"nome": "Marcelo Azevedo",
+			"imagem": "marcelo.png",
+			"oquefaz": "Gerente de progetos desenvolvimento",
+			"resumo": "Formado em Publicidade e propaganda, tem pós graduação em gerenciamento de progetos web pela faculdade senac-sp.<br><br> Trabalha com desenvolvimento de sites desde 2009, aonde desenvolvia hotsites e dava manutenção no portal <a href='http://www.eap.ap.gov.br/'>eap.ap.gov.br</a>. De lá pra cá trabalhou em uma start-up no setor de turismo desenvolvendo uma plataforma de comércio eletrônico e nas agências <a href='http://www.vmotors.com.br/'>vmotors</a> e na agência <a href='http://www.nakedbrasil.com.br/'>Naked Brasil</a>.",
+			"url": "",
+			"portifolio": ["homeosoft.jpg", "itavema.jpg", "space.jpg", "tnt.jpg", "wagner.jpg", "oi01.jpg", "oi02.jpg", "oi03.jpg"]
+
+		}
+	],
+	"criacao": [
+		{
+			"nome": "Guido Silva",
+			"imagem": "ele.png",
+			"oquefaz": "Designer",
+			"resumo": "",
+			"url": "http://tntestudiocriativo.com.br/",
+			"portifolio": []
+
+		},
+		{
+			"nome": "Jan Jürgens",
+			"imagem": "ele.png",
+			"oquefaz": "Arqu. da informação designer",
+			"resumo": "",
+			"url": "http://jurgens.com.br/",
+			"portifolio": []
+
+		},
+		{
+			"nome": "Leonardo Tavares",
+			"imagem": "ele.png",
+			"oquefaz": "Redator",
+			"resumo": "",
+			"url": "http://cargocollective.com/arteporescrito",
+			"portifolio": []
+
+		}
+		
+	],
+	"desenvolvimento": [
+		{
+			"nome": "Marcelo Azevedo",
+			"imagem": "marcelo.png",
+			"oquefaz": "Desenvolvedor Front-end",
+			"resumo": "Formado em Publicidade e propaganda, tem pós graduação em gerenciamento de progetos web pela faculdade senac-sp.<br> Trabalha com desenvolvimento de sites desde 2009, aonde desenvolvia hotsites e dava manutenção no portal <a href='http://www.eap.ap.gov.br/'>eap.ap.gov.br</a>. De lá pra cá trabalhou em uma start-up no setor de turismo desenvolvendo uma plataforma de comércio eletrônico e nas agências <a href='http://www.vmotors.com.br/'>vmotors</a> e na agência <a href='http://www.nakedbrasil.com.br/'>Naked Brasil</a>.",
+			"url": "",
+			"portifolio": ["homeosoft.jpg", "itavema.jpg", "space.jpg", "tnt.jpg", "wagner.jpg", "oi01.jpg", "oi02.jpg", "oi03.jpg"]
+
+		},
+		{
+			"nome": "Andre Lopes",
+			"imagem": "ele.png",
+			"oquefaz": "Desenvolvedor Front/back-end",
+			"resumo": "",
+			"url": "",
+			"portifolio": []
+
+		}
+	]
+
+}
